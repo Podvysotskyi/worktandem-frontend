@@ -9,7 +9,7 @@ This is a scaffold, not an implemented CRM. Existing root README is preserved.
 - `packages/ui`: shared Nuxt layer, neutral Tailwind 4 tokens and a shadcn-vue-style Reka UI button. Components are source-owned, not a separate hosted component service.
 - Company dependencies include TanStack Query, Table and Form. Only Query is initialized; real data tables and validated forms wait for domain/API contracts. Virtual is intentionally deferred until measured need.
 
-Use Node 24 and the pinned pnpm version from `package.json` (Corepack or install pnpm separately).
+Use Node.js 26 LTS (26.13.0, pinned in `.node-version`) and the pinned pnpm 11.25.0 from `package.json`. Install pnpm separately with `npm install --global pnpm@11.25.0`, or use an existing Corepack installation; Node.js 26 does not bundle Corepack.
 
 ```sh
 pnpm install --frozen-lockfile
