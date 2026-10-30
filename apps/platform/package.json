@@ -1,0 +1,24 @@
+{
+  "name": "@worktandem/platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --port 3002",
+    "build": "nuxt build",
+    "prepare": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "preview": "nuxt preview --port 3002",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@worktandem/browser": "workspace:*",
+    "@worktandem/ui": "workspace:*",
+    "nuxt": "4.6.3",
+    "vue": "3.5.44",
+    "vue-router": "5.4.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.0",
+    "vue-tsc": "3.3.13"
+  }
+}

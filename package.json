@@ -8,11 +8,12 @@
   "scripts": {
     "dev:main": "pnpm --filter @worktandem/main dev",
     "dev:company": "pnpm --filter @worktandem/company dev",
+    "dev:platform": "pnpm --filter @worktandem/platform dev",
     "prepare": "pnpm --filter \"./apps/*\" prepare",
     "typecheck": "pnpm --filter \"./apps/*\" typecheck",
     "build": "pnpm --filter \"./apps/*\" build",
     "lint": "eslint .",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs apps/platform/tests/*.test.mjs"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

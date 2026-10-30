@@ -1,0 +1,6 @@
+{
+  "name": "@worktandem/browser",
+  "private": true,
+  "type": "module",
+  "exports": "./index.ts"
+}
